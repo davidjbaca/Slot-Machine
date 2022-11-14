@@ -1,0 +1,33 @@
+html, * {
+    font-family: helvetica;
+    box-sizing: border-box;
+  }
+  
+  header{
+   font-size: 70px;
+   height: 140px;
+   justify-content: center;
+
+  }
+  h1{
+    display: grid;
+    grid-template-columns: auto;
+  }
+
+  body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+
+
+  }
+  
+  main {
+    display: grid;
+    grid-template-columns: 30vmin 30vmin 30vmin;
+    grid-template-rows: 30vmin;
+    column-gap: 35px;
+  }
