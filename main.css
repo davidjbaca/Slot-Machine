@@ -13,7 +13,9 @@ html, * {
     display: grid;
     grid-template-columns: auto;
   }
-
+  h2{
+    background-color: blue;
+  }
   body {
     height: 100vh;
     display: flex;
@@ -30,4 +32,19 @@ html, * {
     grid-template-columns: 30vmin 30vmin 30vmin;
     grid-template-rows: 30vmin;
     column-gap: 35px;
+
+  }
+
+  footer{
+    font-size: 80px;
+    .button{
+      background: black;
+      color: white;
+      text-align: center;
+      display: inline-block;
+      border: none;
+      cursor; pointer;
+      
+    }
+    
   }
