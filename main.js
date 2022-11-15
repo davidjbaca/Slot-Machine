@@ -1,24 +1,35 @@
 const slotRules = {
     cherry: {
-        threeOfAKind: 'wins'
+        threeOfAKind: 'wins',
+        imageUrl: 'imgs/Cherry.png'
     },
     tripleSeven: {
-        threeOfAKind: 'wins'
+        threeOfAKind: 'wins',
+        imageUrl: 'imgs/LuckySeven.png'
     },
     grapes: {
-        threeOfAKind: 'wins'
+        threeOfAKind: 'wins',
+        imageUrl: 'imgs/Grapes.png'
     }
 }
 
-let score = {
-    player: 0,
+const scoreEl =  {
+    player: {
+        borderEl: document.querySelector('#Score')
+    }
 }
 
-const scoreEls = {
-    player: document.querySelector("score");
+const slotoutcomes = {
+    display1: {
+        displayEl: document.querySelector('#display1'),
+        imgEl: document.querySelector('#display1 > img')
+    },
+    display2: {
+        displayEl: document.querySelector('#display2'),
+        imgEl: document.querySelector('#display2 > img')
+    }
+    display3: {
+        displayEl: document.querySelector('#display3'),
+        imgEl: document.querySelector('#display3 > img')
+    }
 }
-
-
-const button = document.querySelector('button');
-
-button.addEventListener('click'

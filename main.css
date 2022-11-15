@@ -7,11 +7,13 @@ html, * {
    font-size: 70px;
    height: 140px;
    justify-content: center;
+   font-size: 45px;
 
   }
   h1{
     display: grid;
     grid-template-columns: auto;
+    font-size: 35px;
   }
   h2{
     background-color: blue;
@@ -37,13 +39,16 @@ html, * {
 
   footer{
     font-size: 80px;
-    .button{
-      background: black;
-      color: white;
-      text-align: center;
-      display: inline-block;
-      border: none;
-      cursor; pointer;
+
+
+  }
+    button{
+        background-color: black;
+        color: white;
+        text-align: center;
+        display: inline-block;
+        cursor: pointer;
+        font-size: 30px;
       
     }
     
