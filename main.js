@@ -3,7 +3,7 @@ const slotRules = {
         threeOfAKind: 'wins',
         imageUrl: 'imgs/Cherry.png'
     },
-    tripleSeven: {
+    seven: {
         threeOfAKind: 'wins',
         imageUrl: 'imgs/LuckySeven.png'
     },
@@ -17,7 +17,13 @@ const scoreEl =  {
     player: {
         pointEl: document.querySelector('#Score')
     }
+
+
 }
+function scoreResult(e) {
+    scoreEl.player.pointEl.innerText = result();
+}
+
 
 const slotoutcomes = {
     display1: {
@@ -27,9 +33,59 @@ const slotoutcomes = {
     display2: {
         displayEl: document.querySelector('#display2'),
         imgEl: document.querySelector('#display2 > img')
-    }
+    },
     display3: {
         displayEl: document.querySelector('#display3'),
         imgEl: document.querySelector('#display3 > img')
     }
 }
+
+const spinbtn = document.querySelector('#Spin');
+const resetbtn = document.querySelector('#Reset');
+
+//resetbtn.addEventListener('click', init);
+
+spinbtn.addEventListener('click', playSlot);
+
+function playSlot(i) {
+    
+    slotoutcomes.display1.displayEl.innerText = randomSlotResult();
+    slotoutcomes.display2.displayEl.innerText = randomSlotResult();
+    slotoutcomes.display3.displayEl.innerText = randomSlotResult();
+    
+    console.log(slotoutcomes.display1.displayEl.innerText)
+
+    if(slotoutcomes.display1.displayEl.innerText === slotoutcomes.display2.displayEl.innerText === slotoutcomes.display3.displayEl.innerText){
+        result = "win"
+    } else {
+        result = "lose"
+    }
+
+    scoreEl[result] +100
+
+
+
+}
+
+function randomSlotResult(){
+
+    const items = ['cherry', 'seven', 'grapes']
+    const randomIndex = Math.floor(Math.random() * (2 - 0 + 1)) +0;
+
+    return items [randomIndex];
+
+
+
+
+}
+
+// init ();
+
+// function init(){
+
+//     score = 0 
+
+//     result = null;
+
+// };
+
