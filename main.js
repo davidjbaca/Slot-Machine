@@ -15,7 +15,7 @@ const slotRules = {
 
 const scoreEl =  {
     player: {
-        borderEl: document.querySelector('#Score')
+        pointEl: document.querySelector('#Score')
     }
 }
 
