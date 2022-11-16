@@ -12,8 +12,11 @@ html, * {
   }
   h1{
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: 40vmin;
+    grid-template-rows: 5vmin;
     font-size: 35px;
+    justify-content: center;
+    text-align: center;
     
   }
   h2{

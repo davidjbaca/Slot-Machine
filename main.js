@@ -18,10 +18,12 @@ const scoreEl =  {
         pointEl: document.querySelector('#Score')
     }
 
-
 }
+
 function scoreResult(e) {
-    scoreEl.player.pointEl.innerText = result();
+    scoreEl.player.pointEl.innerText = result;
+    
+   
 }
 
 let score;
@@ -44,7 +46,7 @@ const slotoutcomes = {
 const spinbtn = document.querySelector('#Spin');
 const resetbtn = document.querySelector('#Reset');
 
-//resetbtn.addEventListener('click', init);
+resetbtn.addEventListener('click', init);
 
 spinbtn.addEventListener('click', playSlot);
 
@@ -57,21 +59,20 @@ function playSlot(i) {
     // console.log(slotoutcomes.display1.displayEl.innerText)
 
     if(slotoutcomes.display1.displayEl.innerText === slotoutcomes.display2.displayEl.innerText && slotoutcomes.display2.displayEl.innerText === slotoutcomes.display3.displayEl.innerText){
-        result = "win"
-        console.log(result)
+        result = "You won!!" 
+        scoreResult ()
+        return result;
+
     } else {
-        result = "lose"
-        console.log(result)
+        result = "You lose.."
+        scoreResult()
+        return result;
+
     } 
-
-    
-
-
-
 
 }
 
-scoreEl
+
 
 function randomSlotResult(){
 
@@ -82,19 +83,18 @@ function randomSlotResult(){
 }
 
 
+init ();
 
-// }
+function init(){
 
-// init ();
+    result = null;
 
-// function init(){
+};
 
-//     score = 0, 
+function render(){
 
-//     result = null;
-
-// };
-
-// function render(){
-
-//     slotoutcomes.display1.imgEl.src = slotRules[]
+    slotoutcomes.display1.imgEl.src = slotRules[display1.displayEl].imageUrl;
+    slotoutcomes.display2.imgEl.src = slotRules[display1.displayEl].imageUrl;
+    slotoutcomes.display3.imgEl.src = slotRules[display1.displayEl].imageUrl;
+    
+}
