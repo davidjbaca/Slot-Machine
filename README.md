@@ -45,3 +45,8 @@ and the render function.
     slotoutcomes.display3.displayEl.innerText = null;
 
 
+## How to play
+
+The user, player, etc... will have a one time opportunity. The spin button is clicked, the three displays show three options of emoji's (🍒,💰, 🍇) and if you have three of a kind you are a winner and are shown "You Won!!" in white letters and if you don't have three of a kind you are then shown "You lose.." .
+
+The reset button lets you play again or you can simply click the spin button again for another chance. 
