@@ -71,7 +71,7 @@ The reset button lets you play again or you can simply click the spin button aga
 
 ## Planned improvements:
 
-Add a spinning slot.
-Have a cash register sound when the spin function is pushed.
-Add a delay so that the slots don't all spin and stop at the same time. 
-Add more options as far as the emoji's 
+1. Add a spinning slot.
+2. Have a cash register sound when the spin function is pushed.
+3. Add a delay so that the slots don't all spin and stop at the same time. 
+4. Add more options as far as the emoji's 
