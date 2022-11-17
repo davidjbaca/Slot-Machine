@@ -1,6 +1,6 @@
 # Slot-Machine
 
-##Introduction
+## Introduction
 
 In today's casino you'll see a variety of types of slot machines, but the orginal is still heavily influencing the modern ones. Many different countries having their own version it's a bit hard to pinpoint the actual inventor since a patent wasn't allowed due to it being illegal to gamble. August Charles Fey was the one that perfected a stolen idea, and is considered the inventor. A slot machine, for some it's a frequent destination when going onto a casino floor, and for other's that don't really play alot of cards, it's their way of gambling when at a casino. From a ski resort in New Mexico, in a Vegas icon, or all the way in Atlantic city, slot machines are always a key staple in every casino. 
 
@@ -22,17 +22,17 @@ The java script was what gave me the most trouble but I was able to get it figur
 
 This code, 
 
-function randomSlotResult(){
+
 
     const items = ['🍒','💰', '🍇']
     const randomIndex = Math.floor(Math.random() * (2 - 0 + 1)) +0;
 
     return items [randomIndex];
-}
+
 
 and the render function. 
 
-function render(){
+
 
 
 
@@ -43,5 +43,5 @@ function render(){
     slotoutcomes.display1.displayEl.innerText = null;
     slotoutcomes.display2.displayEl.innerText = null;
     slotoutcomes.display3.displayEl.innerText = null;
-}
+
 
