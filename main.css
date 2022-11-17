@@ -35,11 +35,14 @@ html, * {
   
   main {
     display: grid;
-    grid-template-columns: 30vmin 30vmin 30vmin;
-    grid-template-rows: 30vmin;
+    grid-template-columns: 35vmin 35vmin 35vmin;
+    grid-template-rows: 50vmin;
     column-gap: 35px;
-
+    text-align: center;
+    font-size: 70px;
+  
   }
+
 
   footer{
     font-size: 80px;

@@ -1,18 +1,17 @@
-const slotRules = {
-    cherry: {
-        threeOfAKind: 'wins',
-        imageUrl: 'imgs/Cherry.png'
-    },
-    seven: {
-        threeOfAKind: 'wins',
-        imageUrl: 'imgs/LuckySeven.png'
-    },
-    grapes: {
-        threeOfAKind: 'wins',
-        imageUrl: 'imgs/Grapes.png'
-    }
-}
-
+// const slotRules = {
+//     cherry: {
+//         threeOfAKind: 'wins',
+//         imageUrl: '/Users/davidbaca/code/Slot-Machine/imgs/Cherry.png'
+//     },
+//     seven: {
+//         threeOfAKind: 'wins',
+//         imageUrl: "imgs/luckyseven.png"
+//     },
+//     grapes: {
+//         threeOfAKind: 'wins',
+//         imageUrl: '/Users/davidbaca/code/Slot-Machine/imgs/Grapes.png'
+//     }
+// }
 const scoreEl =  {
     player: {
         pointEl: document.querySelector('#Score')
@@ -46,9 +45,12 @@ const slotoutcomes = {
 const spinbtn = document.querySelector('#Spin');
 const resetbtn = document.querySelector('#Reset');
 
-resetbtn.addEventListener('click', init);
-
 spinbtn.addEventListener('click', playSlot);
+
+resetbtn.addEventListener('click',init);
+
+
+
 
 function playSlot(i) {
     
@@ -76,25 +78,22 @@ function playSlot(i) {
 
 function randomSlotResult(){
 
-    const items = ['cherry', 'seven', 'grapes']
+    const items = ['🍒','💰', '🍇']
     const randomIndex = Math.floor(Math.random() * (2 - 0 + 1)) +0;
 
     return items [randomIndex];
 }
 
-
-init ();
-
 function init(){
+    randomIndex = null;
 
-    result = null;
 
-};
+
+    render();
+}
 
 function render(){
-
-    slotoutcomes.display1.imgEl.src = slotRules[display1.displayEl].imageUrl;
-    slotoutcomes.display2.imgEl.src = slotRules[display1.displayEl].imageUrl;
-    slotoutcomes.display3.imgEl.src = slotRules[display1.displayEl].imageUrl;
-    
+    items = null;
 }
+
+
