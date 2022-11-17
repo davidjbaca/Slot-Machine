@@ -60,3 +60,18 @@ What you'll see if you lose..
 <img width="1280" alt="Screen Shot 2022-11-17 at 3 18 53 PM" src="https://user-images.githubusercontent.com/116526025/202565667-22c36cf5-8f39-457c-af7f-ac89b298c7cf.png">
 
 The reset button lets you play again or you can simply click the spin button again for another chance. 
+
+## Technologies used:
+
+- HTML
+- CSS
+- Javascript
+- VS Code
+- GitHub
+
+## Planned improvements:
+
+Add a spinning slot.
+Have a cash register sound when the spin function is pushed.
+Add a delay so that the slots don't all spin and stop at the same time. 
+Add more options as far as the emoji's 
