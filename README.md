@@ -30,7 +30,7 @@ This code,
     return items [randomIndex];
 
 
-and the render function. 
+and the render function. The first was how I randomly was able to have a result and the second was how I got my reset button to finish. 
 
 
 
@@ -48,5 +48,15 @@ and the render function.
 ## How to play
 
 The user, player, etc... will have a one time opportunity. The spin button is clicked, the three displays show three options of emoji's (🍒,💰, 🍇) and if you have three of a kind you are a winner and are shown "You Won!!" in white letters and if you don't have three of a kind you are then shown "You lose.." .
+
+![Start] (https://i.imgur.com/yW1ynBO.jpg)
+
+What you'll see if you win..
+
+![Win] (https://i.imgur.com/2zdTxz7.jpg)
+
+What you'll see if you lose..
+
+![Lose] (https://i.imgur.com/6fctWb2.jpg)
 
 The reset button lets you play again or you can simply click the spin button again for another chance. 
