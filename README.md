@@ -49,14 +49,14 @@ and the render function. The first was how I randomly was able to have a result 
 
 The user, player, etc... will have a one time opportunity. The spin button is clicked, the three displays show three options of emoji's (🍒,💰, 🍇) and if you have three of a kind you are a winner and are shown "You Won!!" in white letters and if you don't have three of a kind you are then shown "You lose.." .
 
-!(https://i.imgur.com/yW1ynBO.jpg)
+<img width="1280" alt="Screen Shot 2022-11-17 at 3 18 46 PM" src="https://user-images.githubusercontent.com/116526025/202565335-83447918-94fb-4724-9608-aa7740b3a19d.png">
 
 What you'll see if you win..
 
-!(https://i.imgur.com/2zdTxz7.jpg)
+<img width="1280" alt="Screen Shot 2022-11-17 at 3 19 05 PM" src="https://user-images.githubusercontent.com/116526025/202565607-b1e7ab03-8f49-40e6-b500-5cc50ec8d5f2.png">
 
 What you'll see if you lose..
 
-!(https://i.imgur.com/6fctWb2.jpg)
+<img width="1280" alt="Screen Shot 2022-11-17 at 3 18 53 PM" src="https://user-images.githubusercontent.com/116526025/202565667-22c36cf5-8f39-457c-af7f-ac89b298c7cf.png">
 
 The reset button lets you play again or you can simply click the spin button again for another chance. 
