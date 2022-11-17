@@ -1,17 +1,3 @@
-// const slotRules = {
-//     cherry: {
-//         threeOfAKind: 'wins',
-//         imageUrl: '/Users/davidbaca/code/Slot-Machine/imgs/Cherry.png'
-//     },
-//     seven: {
-//         threeOfAKind: 'wins',
-//         imageUrl: "imgs/luckyseven.png"
-//     },
-//     grapes: {
-//         threeOfAKind: 'wins',
-//         imageUrl: '/Users/davidbaca/code/Slot-Machine/imgs/Grapes.png'
-//     }
-// }
 const scoreEl =  {
     player: {
         pointEl: document.querySelector('#Score')
@@ -25,8 +11,9 @@ function scoreResult(e) {
    
 }
 
-let score;
- 
+let result;
+
+
 const slotoutcomes = {
     display1: {
         displayEl: document.querySelector('#display1'),
@@ -84,16 +71,29 @@ function randomSlotResult(){
     return items [randomIndex];
 }
 
-function init(){
-    randomIndex = null;
+init();
+
+function init (){
+    result = null;
 
 
 
-    render();
+render();
+
 }
 
 function render(){
-    items = null;
+
+
+
+    for(let key in result){
+        scoreEl[key].innerText = result[key];
+    }
+
+    slotoutcomes.display1.displayEl.innerText = null;
+    slotoutcomes.display2.displayEl.innerText = null;
+    slotoutcomes.display3.displayEl.innerText = null;
 }
+
 
 
