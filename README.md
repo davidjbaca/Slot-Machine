@@ -76,6 +76,7 @@ The reset button lets you play again or you can simply click the spin button aga
 3. Add a delay so that the slots don't all spin and stop at the same time. 
 4. Add more options as far as the emoji's 
 
-Play it here! 
+#### Play the game here!
 
 https://davidjbaca.github.io/Slot-Machine/
+
